@@ -155,5 +155,5 @@ class HomeViewModel extends BaseViewModel {
   String get currentSymbol => flags[selectedFlagIndex]['symbol'] ?? '£';
   String get currentFlagEmoji => flags[selectedFlagIndex]['emoji'] ?? '🇬🇧';
 
-  void navToCopyTrading() => _navService.navigateToCopyTradingView;
+  navToCopyTrading() => _navService.navigateToCopyTradingView();
 }

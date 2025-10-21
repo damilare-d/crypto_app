@@ -92,7 +92,9 @@ class HomeView extends StackedView<HomeViewModel> {
               const SizedBox(height: 14),
 
               // quick actions container
-              QuickActionContainer(vm: vm,),
+              QuickActionContainer(
+                vm: vm,
+              ),
 
               const SizedBox(height: 18),
 
@@ -163,8 +165,8 @@ class HomeView extends StackedView<HomeViewModel> {
               const SizedBox(height: 12),
 
               // ===== Listed icons title =====
-             const Padding(
-                padding:  EdgeInsets.symmetric(horizontal: 16),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text('Markets', style: ktsBodyText),

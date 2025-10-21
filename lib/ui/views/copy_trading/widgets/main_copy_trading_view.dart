@@ -29,9 +29,7 @@ class MainCopyTradingView extends ViewModelWidget<CopyTradingViewModel> {
                     icon: Icons.computer,
                     title: 'My Dashboard',
                     subtitle: 'View Trades',
-                    onTap: () {
-                      // navigate to dashboard detail
-                    },
+                    onTap: vm.navigateToCopyTrdngDb,
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -43,7 +41,7 @@ class MainCopyTradingView extends ViewModelWidget<CopyTradingViewModel> {
                       Color(0xFFF9D8E5)
                     ],
                     icon: Icons.workspace_premium,
-                    title: 'Become a PRO ',
+                    title: 'Become a PRO trader',
                     subtitle: 'Apply Now',
                     onTap: () {
                       // apply now
@@ -135,9 +133,7 @@ class _TopGradientCard extends StatelessWidget {
                     children: [
                       Text(
                         title,
-                        overflow: TextOverflow.visible,
-                        maxLines: 2,
-                        softWrap: true,
+                        overflow: TextOverflow.ellipsis,
                         style: ktsBodyText.copyWith(color: Colors.black),
                       ),
                       const SizedBox(height: 4),

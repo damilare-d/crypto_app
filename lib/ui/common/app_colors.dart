@@ -10,9 +10,13 @@ const Color kcBackgroundColor = kcDarkGreyColor;
 
 const Color kcPrimaryText = Color(0xffffffff);
 const Color kcSecondaryText = Color(0xffa7b1bc);
+const Color kcTextWarning = Color(0xfff79009);
 const Color kcIconColor = Color(0xff68CFEE);
-
 
 /// Dashboard Gradient (Middle Button)
 const Color kcGradientStart = Color(0xFF2764FF);
 const Color kcGradientEnd = Color(0xFF1D3573);
+
+/// State-based Colors
+const Color kcActiveIconColor = kcPrimaryText;
+const Color kcInactiveIconColor = kcSecondaryText;

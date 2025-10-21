@@ -8,7 +8,11 @@ import 'package:crypto_app/ui/views/dashboard/dashboard_view.dart';
 import 'package:crypto_app/ui/views/wallet/wallet_view.dart';
 import 'package:crypto_app/ui/views/profile/profile_view.dart';
 import 'package:crypto_app/ui/views/history/history_view.dart';
-import 'package:crypto_app/ui/dialogs/dashbard/dashbard_dialog.dart';
+
+import '../ui/dialogs/dashbard/dashbard_dialog.dart';
+import 'package:crypto_app/ui/views/copy_trading/copy_trading_view.dart';
+import 'package:crypto_app/ui/views/copy_trading_dashboard/copy_trading_dashboard_view.dart';
+import 'package:crypto_app/ui/views/copy_trader_detail/copy_trader_detail_view.dart';
 // @stacked-import
 
 @StackedApp(
@@ -19,6 +23,9 @@ import 'package:crypto_app/ui/dialogs/dashbard/dashbard_dialog.dart';
     MaterialRoute(page: WalletView),
     MaterialRoute(page: ProfileView),
     MaterialRoute(page: HistoryView),
+    MaterialRoute(page: CopyTradingView),
+    MaterialRoute(page: CopyTradingDashboardView),
+    MaterialRoute(page: CopyTraderDetailView),
 // @stacked-route
   ],
   dependencies: [
@@ -33,7 +40,7 @@ import 'package:crypto_app/ui/dialogs/dashbard/dashbard_dialog.dart';
   ],
   dialogs: [
     StackedDialog(classType: InfoAlertDialog),
-    StackedDialog(classType: DashbardDialog),
+    StackedDialog(classType: DashboardDialog),
 // @stacked-dialog
   ],
 )
