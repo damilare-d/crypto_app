@@ -13,6 +13,7 @@ import '../ui/dialogs/dashbard/dashbard_dialog.dart';
 import 'package:crypto_app/ui/views/copy_trading/copy_trading_view.dart';
 import 'package:crypto_app/ui/views/copy_trading_dashboard/copy_trading_dashboard_view.dart';
 import 'package:crypto_app/ui/views/copy_trader_detail/copy_trader_detail_view.dart';
+import 'package:crypto_app/ui/bottom_sheets/copy_trade_awareness/copy_trade_awareness_sheet.dart';
 // @stacked-import
 
 @StackedApp(
@@ -36,7 +37,8 @@ import 'package:crypto_app/ui/views/copy_trader_detail/copy_trader_detail_view.d
   ],
   bottomsheets: [
     StackedBottomsheet(classType: NoticeSheet),
-    // @stacked-bottom-sheet
+    StackedBottomsheet(classType: CopyTradeAwarenessSheet),
+// @stacked-bottom-sheet
   ],
   dialogs: [
     StackedDialog(classType: InfoAlertDialog),

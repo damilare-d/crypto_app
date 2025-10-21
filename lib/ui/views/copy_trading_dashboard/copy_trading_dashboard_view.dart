@@ -21,10 +21,10 @@ class CopyTradingDashboardView
         title: const Text('Copy Trading Dashboard', style: ktsBodyText),
         centerTitle: true,
         automaticallyImplyLeading: true,
-        leading:  IconButton(
+        leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios),
           color: kcLightGrey,
-          onPressed: (){
+          onPressed: () {
             Navigator.pop(context);
           },
         ),

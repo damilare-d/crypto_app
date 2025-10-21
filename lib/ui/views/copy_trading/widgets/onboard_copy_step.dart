@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../common/app_colors.dart';
 import '../../../common/text_styles.dart';
+import '../../../widgets/custom_button.dart';
 
 class OnboardStep extends StatelessWidget {
   final int indicatorActiveCount; // 1 or 2
@@ -9,7 +10,6 @@ class OnboardStep extends StatelessWidget {
   final String caption;
   final String imageUrl;
   final String ctaText;
-  final LinearGradient buttonGradient;
   final VoidCallback onPrimaryPressed;
 
   const OnboardStep({
@@ -19,7 +19,6 @@ class OnboardStep extends StatelessWidget {
     required this.caption,
     required this.imageUrl,
     required this.ctaText,
-    required this.buttonGradient,
     required this.onPrimaryPressed,
   });
 
@@ -90,28 +89,9 @@ class OnboardStep extends StatelessWidget {
             const SizedBox(height: 12),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: onPrimaryPressed,
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                  // backgroundColor replaced by gradient using Ink
-                  backgroundColor: Colors.transparent,
-                ),
-                child: Ink(
-                  decoration: BoxDecoration(
-                    gradient: buttonGradient,
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Container(
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    child: Text('Get started',
-                        style: ktsBodyText.copyWith(color: Colors.white)),
-                  ),
-                ),
+              child: CustomButton(
+                  onPrimaryPressed: onPrimaryPressed,
+                buttonText:'Get started',
               ),
             ),
           ],

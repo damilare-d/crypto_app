@@ -38,9 +38,6 @@ class CopyTradingView extends StackedView<CopyTradingViewModel> {
                 'Leverage expert strategies from professional traders to boost your trading results.',
             imageUrl: 'assets/images/copy_pro_traders.png',
             ctaText: 'Watch a how-to video',
-            buttonGradient: const LinearGradient(
-              colors: [Color(0xFF483BEB), Color(0xFF7847E1), Color(0xFFDD568D)],
-            ),
             onPrimaryPressed: vm.onGetStartedPressed,
           ),
 
@@ -52,9 +49,6 @@ class CopyTradingView extends StackedView<CopyTradingViewModel> {
                 'Streamline your approach to trading and increase your winning potential effortlessly.',
             imageUrl: 'assets/images/do_less_win_more.png',
             ctaText: 'Watch a how-to video',
-            buttonGradient: const LinearGradient(
-              colors: [Color(0xFF483BEB), Color(0xFF7847E1), Color(0xFFDD568D)],
-            ),
             onPrimaryPressed: vm.onGetStartedPressed,
           ),
 

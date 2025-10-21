@@ -90,4 +90,5 @@ class CopyTradingViewModel extends BaseViewModel {
   }
 
   navigateToCopyTrdngDb() => _navService.navigateToCopyTradingDashboardView();
+  navgateToCopyTraderDetail() => _navService.navigateToCopyTraderDetailView();
 }

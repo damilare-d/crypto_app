@@ -1,3 +1,5 @@
+import 'package:crypto_app/ui/common/app_colors.dart';
+import 'package:crypto_app/ui/common/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:stacked/stacked.dart';
@@ -15,24 +17,26 @@ class StartupView extends StackedView<StartupViewModel> {
     Widget? child,
   ) {
     return const Scaffold(
+      backgroundColor: kcDarkGreyColor,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'STACKED',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900),
+              'CRYPTO\nAPP',
+              textAlign: TextAlign.center,
+              style: ktsHeadlineMedium,
             ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('Loading ...', style: TextStyle(fontSize: 16)),
+                Text('Loading ...', style: ktsBodyText),
                 horizontalSpaceSmall,
                 SizedBox(
                   width: 16,
                   height: 16,
                   child: CircularProgressIndicator(
-                    color: Colors.black,
+                    color: Colors.white,
                     strokeWidth: 6,
                   ),
                 ),

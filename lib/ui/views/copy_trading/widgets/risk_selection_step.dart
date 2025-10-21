@@ -1,3 +1,4 @@
+import 'package:crypto_app/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common/app_colors.dart';
@@ -80,19 +81,11 @@ class RiskSelectionStep extends StatelessWidget {
             const Spacer(),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: selectedIndex >= 0 ? onProceed : null,
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                  backgroundColor:
-                      selectedIndex >= 0 ? kcGradientStart : kcVeryLightGrey,
-                ),
-                child: Text('Proceed',
-                    style: ktsBodyText.copyWith(color: Colors.white)),
-              ),
+              child: CustomButton(
+                  onPrimaryPressed: selectedIndex >= 0 ?  onProceed : null,
+                  buttonText: 'Proceed')
+
+
             ),
           ],
         ),
