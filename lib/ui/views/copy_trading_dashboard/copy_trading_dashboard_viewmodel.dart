@@ -74,7 +74,12 @@ class CopyTradingDashboardViewModel extends BaseViewModel {
   ];
 
   // Mock trading pairs list
-  final List<String> tradingPairs = ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'SOLUSDT'];
+  final List<String> tradingPairs = [
+    'BTCUSDT',
+    'ETHUSDT',
+    'XRPUSDT',
+    'SOLUSDT'
+  ];
 
   // Mock pro traders list (for My Traders)
   final List<Map<String, dynamic>> allTraders = [
@@ -89,7 +94,9 @@ class CopyTradingDashboardViewModel extends BaseViewModel {
   List<Map<String, dynamic>> get filteredTraders {
     if (traderQuery.trim().isEmpty) return allTraders;
     final q = traderQuery.toLowerCase();
-    return allTraders.where((t) => (t['name'] as String).toLowerCase().contains(q)).toList();
+    return allTraders
+        .where((t) => (t['name'] as String).toLowerCase().contains(q))
+        .toList();
   }
 
   void updateTraderQuery(String q) {

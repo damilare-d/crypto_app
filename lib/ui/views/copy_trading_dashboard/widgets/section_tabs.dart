@@ -39,9 +39,8 @@ class SectionTabs extends ViewModelWidget<CopyTradingDashboardViewModel> {
                   height: 6,
                   width: 100,
                   decoration: BoxDecoration(
-                    color: active
-                        ? kcIconColor
-                        : kcMediumGrey.withOpacity(0.04),
+                    color:
+                        active ? kcIconColor : kcMediumGrey.withOpacity(0.04),
                     borderRadius: BorderRadius.circular(10),
                   ),
                 )
@@ -54,7 +53,6 @@ class SectionTabs extends ViewModelWidget<CopyTradingDashboardViewModel> {
   }
 }
 
-
 class TabContent extends ViewModelWidget<CopyTradingDashboardViewModel> {
   final CopyTradingDashboardViewModel vm;
   const TabContent({required this.vm, Key? key}) : super(key: key);
@@ -65,7 +63,10 @@ class TabContent extends ViewModelWidget<CopyTradingDashboardViewModel> {
       case 0:
         return ChartSection(vm: viewModel);
       case 1:
-        return TradesSection(title: 'Trading History', items: viewModel.tradingHistory, onTap: (item){});
+        return TradesSection(
+            title: 'Trading History',
+            items: viewModel.tradingHistory,
+            onTap: (item) {});
       case 2:
         return StatsSection(vm: viewModel);
       case 3:

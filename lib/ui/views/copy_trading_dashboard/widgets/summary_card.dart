@@ -19,7 +19,8 @@ class SummaryCard extends ViewModelWidget<CopyTradingDashboardViewModel> {
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text('Copy trading assets', style: ktsCaption.copyWith(color: kcSecondaryText)),
+        Text('Copy trading assets',
+            style: ktsCaption.copyWith(color: kcSecondaryText)),
         const SizedBox(height: 6),
         Text('\$5,564.96', style: ktsBodyText.copyWith(color: kcPrimaryText)),
         const SizedBox(height: 8),
@@ -29,12 +30,15 @@ class SummaryCard extends ViewModelWidget<CopyTradingDashboardViewModel> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text('Net profit', style: ktsCaption.copyWith(color: kcSecondaryText)),
+              Text('Net profit',
+                  style: ktsCaption.copyWith(color: kcSecondaryText)),
               const SizedBox(height: 4),
-              Text('\$1,234.12', style: ktsBodyText.copyWith(color: kcPrimaryText)),
+              Text('\$1,234.12',
+                  style: ktsBodyText.copyWith(color: kcPrimaryText)),
             ]),
             Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-              Text('Today\'s PNL', style: ktsCaption.copyWith(color: kcSecondaryText)),
+              Text('Today\'s PNL',
+                  style: ktsCaption.copyWith(color: kcSecondaryText)),
               const SizedBox(height: 4),
               Text(
                 '+207.25',

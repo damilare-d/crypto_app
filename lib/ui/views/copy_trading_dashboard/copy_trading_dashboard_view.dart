@@ -6,19 +6,25 @@ import 'copy_trading_dashboard_viewmodel.dart';
 import '../../common/app_colors.dart';
 import '../../common/text_styles.dart';
 
-class CopyTradingDashboardView extends StackedView<CopyTradingDashboardViewModel> {
+class CopyTradingDashboardView
+    extends StackedView<CopyTradingDashboardViewModel> {
   const CopyTradingDashboardView({Key? key}) : super(key: key);
 
   @override
-  Widget builder(BuildContext context, CopyTradingDashboardViewModel vm, Widget? child) {
+  Widget builder(
+      BuildContext context, CopyTradingDashboardViewModel vm, Widget? child) {
     return Scaffold(
       backgroundColor: kcBackgroundColor,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: kcDarkGreyColor,
         title: const Text('Copy Trading Dashboard', style: ktsBodyText),
-        centerTitle: true,automaticallyImplyLeading: true,
-        leading: const Icon(Icons.arrow_back_ios, color: kcLightGrey,),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        leading: const Icon(
+          Icons.arrow_back_ios,
+          color: kcLightGrey,
+        ),
       ),
       body: SafeArea(
         child: Padding(
@@ -46,5 +52,3 @@ class CopyTradingDashboardView extends StackedView<CopyTradingDashboardViewModel
   CopyTradingDashboardViewModel viewModelBuilder(BuildContext context) =>
       CopyTradingDashboardViewModel();
 }
-
-
