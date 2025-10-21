@@ -24,3 +24,17 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  fonts:
+    - family: EncodeSans
+      fonts:
+        - asset: assets/fonts/EncodeSans-Bold.ttf
+        - asset: assets/fonts/EncodeSans-Regular.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+
+  assets:
+    - assets/images/
+
+
+
