@@ -1,7 +1,11 @@
+import 'package:crypto_app/app/app.locator.dart';
+import 'package:crypto_app/app/app.router.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
+import 'package:stacked_services/stacked_services.dart';
 
 class CopyTradingViewModel extends BaseViewModel {
+  final _navService = locator<NavigationService>();
   final PageController pageController = PageController();
   int currentStep = 0;
 
@@ -84,4 +88,6 @@ class CopyTradingViewModel extends BaseViewModel {
     pageController.dispose();
     super.dispose();
   }
+
+   navigateToCopyTrdngDb() => _navService.navigateToCopyTradingDashboardView();
 }
