@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../common/app_colors.dart';
 import '../../../common/text_styles.dart';
 import '../copy_trader_detail_viewmodel.dart';
-
 
 class TraderCopiersSection extends StatelessWidget {
   final CopyTraderDetailViewModel vm;
@@ -25,7 +23,7 @@ class TraderCopiersSection extends StatelessWidget {
                 radius: 18,
                 backgroundColor: kcVeryLightGrey,
                 child:
-                Text(c['name'].split(' ').map((s) => s[0]).take(2).join())),
+                    Text(c['name'].split(' ').map((s) => s[0]).take(2).join())),
             const SizedBox(width: 12),
             Expanded(
                 child: Text(c['name'],

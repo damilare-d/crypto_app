@@ -38,9 +38,7 @@ class CopyTraderDetailView extends StackedView<CopyTraderDetailViewModel> {
           children: [
             // Main scrollable content
             SingleChildScrollView(
-              padding: const EdgeInsets.only(
-                  bottom:
-                      bottomActionHeight + 24),
+              padding: const EdgeInsets.only(bottom: bottomActionHeight + 24),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -178,12 +176,11 @@ class CopyTraderDetailView extends StackedView<CopyTraderDetailViewModel> {
               bottom: 12,
               left: 16,
               right: 16,
-              child: SizedBox(
-                height: 56,
-                child:CustomButton(
-                    onPrimaryPressed: (){},
-                    buttonText: 'Copy Trade'),
-              ),
+              child: CustomButton(
+                  onPrimaryPressed: () {
+                    vm.showBottomSheet();
+                  },
+                  buttonText: 'Copy Trade'),
             ),
           ],
         ),
@@ -296,22 +293,20 @@ class _DetailTabs extends ViewModelWidget<CopyTraderDetailViewModel> {
                 Container(
                   margin: const EdgeInsets.only(right: 8),
                   padding: const EdgeInsets.symmetric(vertical: 10),
-
                   child: Center(
                       child: Text(labels[i],
                           style: ktsCaption.copyWith(
-                              color: active ? kcPrimaryText : kcSecondaryText))),
+                              color:
+                                  active ? kcPrimaryText : kcSecondaryText))),
                 ),
                 Container(
-                  height: 6, width: 100,
+                    height: 6,
+                    width: 100,
                     decoration: BoxDecoration(
-                      color: active
-                          ? kcGradientStart.withOpacity(0.12)
-                          : kcMediumGrey.withOpacity(0.04),
+                      color:
+                          active ? kcIconColor : kcMediumGrey.withOpacity(0.04),
                       borderRadius: BorderRadius.circular(10),
-                      border: active ? Border.all(color: kcGradientStart) : null,
-                    )
-                )
+                    ))
               ],
             ),
           ),

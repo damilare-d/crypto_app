@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../common/app_colors.dart';
@@ -9,9 +8,10 @@ class TraderChartSection extends StatelessWidget {
   final String duration;
   final VoidCallback onDurationTap;
   const TraderChartSection(
-      {super.key, required this.data,
-        required this.duration,
-        required this.onDurationTap});
+      {super.key,
+      required this.data,
+      required this.duration,
+      required this.onDurationTap});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,6 @@ class TraderChartSection extends StatelessWidget {
     ]);
   }
 }
-
 
 class _SimpleLineChart extends StatelessWidget {
   final List<double> data;

@@ -12,8 +12,6 @@ class HomeView extends StackedView<HomeViewModel> {
 
   @override
   Widget builder(BuildContext context, HomeViewModel vm, Widget? child) {
-    final theme = Theme.of(context);
-
     return Scaffold(
       backgroundColor: kcBackgroundColor,
       body: SafeArea(

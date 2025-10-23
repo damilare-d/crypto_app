@@ -1,4 +1,3 @@
-
 import 'package:crypto_app/ui/common/app_colors.dart';
 import 'package:flutter/material.dart';
 

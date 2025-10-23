@@ -80,13 +80,10 @@ class RiskSelectionStep extends StatelessWidget {
             }),
             const Spacer(),
             SizedBox(
-              width: double.infinity,
-              child: CustomButton(
-                  onPrimaryPressed: selectedIndex >= 0 ?  onProceed : null,
-                  buttonText: 'Proceed')
-
-
-            ),
+                width: double.infinity,
+                child: CustomButton(
+                    onPrimaryPressed: selectedIndex >= 0 ? onProceed : null,
+                    buttonText: 'Proceed')),
           ],
         ),
       ),

@@ -90,8 +90,8 @@ class OnboardStep extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: CustomButton(
-                  onPrimaryPressed: onPrimaryPressed,
-                buttonText:'Get started',
+                onPrimaryPressed: onPrimaryPressed,
+                buttonText: 'Get started',
               ),
             ),
           ],

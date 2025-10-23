@@ -29,7 +29,7 @@ class MainCopyTradingView extends ViewModelWidget<CopyTradingViewModel> {
                     icon: Icons.computer,
                     title: 'My Dashboard',
                     subtitle: 'View Trades',
-                    onTap:()=> vm.navigateToCopyTrdngDb(),
+                    onTap: () => vm.navigateToCopyTrdngDb(),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -73,7 +73,7 @@ class MainCopyTradingView extends ViewModelWidget<CopyTradingViewModel> {
                     pnl: t['pnl'],
                     winRate: t['winRate'],
                     onCopy: () => viewModel.onCopyTrader(index),
-                    onTap:()=> viewModel.navgateToCopyTraderDetail(),
+                    onTap: () => viewModel.navgateToCopyTraderDetail(),
                   );
                 },
               ),
@@ -90,7 +90,7 @@ class _TopGradientCard extends StatelessWidget {
   final IconData icon;
   final String title;
   final String subtitle;
-  final void Function()?  onTap;
+  final void Function()? onTap;
 
   const _TopGradientCard({
     required this.colors,

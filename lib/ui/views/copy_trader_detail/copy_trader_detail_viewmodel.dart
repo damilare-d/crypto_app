@@ -104,9 +104,9 @@ class CopyTraderDetailViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-   showBottomSheet() {
+  showBottomSheet() {
     _bottomSheetService.showCustomSheet(
-      variant: BottomSheetType.notice,
+      variant: BottomSheetType.copyTradeAwareness,
       title: ksHomeBottomSheetTitle,
       description: ksHomeBottomSheetDescription,
     );

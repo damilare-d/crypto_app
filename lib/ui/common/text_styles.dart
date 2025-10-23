@@ -24,6 +24,15 @@ const TextStyle ktsHeadlineMedium = TextStyle(
   color: kcPrimaryText,
 );
 
+/// Normal Headline
+const TextStyle ktsHeadlineNormal = TextStyle(
+  fontSize: 20,
+  height: 32 / 24,
+  fontWeight: FontWeight.w600, // Extra Bold
+  fontFamily: _fontEncodeSans,
+  color: kcPrimaryText,
+);
+
 /// 3️⃣ Caption / Small Text
 const TextStyle ktsCaption = TextStyle(
   fontSize: 12,

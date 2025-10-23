@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../common/app_colors.dart';
 import '../../../common/text_styles.dart';
 import '../copy_trader_detail_viewmodel.dart';
-
 
 class TraderAllTradesSection extends StatelessWidget {
   final CopyTraderDetailViewModel vm;
@@ -80,14 +78,6 @@ class TraderAllTradesSection extends StatelessWidget {
             color: kcDarkGreyColor, borderRadius: BorderRadius.circular(12)),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Row(children: [
-            Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                    color: kcVeryLightGrey,
-                    borderRadius: BorderRadius.circular(8)),
-                child: Text(item['pair'],
-                    style: ktsCaption.copyWith(color: kcDarkGreyColor))),
-            const SizedBox(width: 8),
             Text(item['pair'],
                 style: ktsCaption.copyWith(color: kcPrimaryText)),
             const SizedBox(width: 8),
