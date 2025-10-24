@@ -9,7 +9,9 @@ This Flutter application was built as part of the **Roqqu Mobile Developer Asses
 🎥 **Live Preview (Appetize):** [Appetize Link Here]  
 
 
-https://github.com/user-attachments/assets/771d5637-8a2b-4656-8111-bd85d72d8a43
+
+
+https://github.com/user-attachments/assets/ae6c567e-a191-45ad-8867-7ca9ab35c64e
 
 
 🖼️ **Screenshots:**
